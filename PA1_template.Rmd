@@ -1,15 +1,17 @@
 ---
-title: "Reproducible Research"
+title: "Reproducible Research: Peer Assessment 1"
 author: "Ramesh P"
 date: "April 2, 2016"
-output: html_document
+output: 
+  html_document:
+    keep_md: true
 ---
-
 ##About
 
 This was the first project for the Reproducible Research course in Coursera's Data Science specialization track. The purpose of the project was to answer a series of questions using data collected from a FitBit.
 
-##Loading and Preprocessing Data
+
+## Loading and preprocessing the data
 
 
 ```{r,warning=FALSE,comment=FALSE,message=FALSE}
@@ -38,7 +40,7 @@ clean <- activity[!is.na(activity$steps),]
 
 ```
 
-What is mean total number of steps taken per day?
+## What is mean total number of steps taken per day?
 
 Sum steps by day using aggregate function and Plot the Histogram
 
